@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap');
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    min-height: 700px;
+    padding: 0;
+    background-color: #53389E;
+    position: relative;
+}
+
+.container1 .top{
+ padding-top: 40px;
+ font-size: 14px;
+ font-weight: 200;
+ color: #E9D7FE;
+}
+
+.container1 .heading{
+    padding-top: 20px;
+    line-height: 55px;
+    font-size: 60px;
+}
+
+.container1 .bottom{
+ padding-top: 26px;
+ font-size: 14px;
+ margin-bottom: 40px;
+ font-weight: 200;
+ color: #E9D7FE;
+}
+
+.btn{
+    display: flex;
+    margin: 10px 25px;
+    justify-content: center;
+}
+
+.btn1{
+    display: flex;
+    background-color: #fff;
+    color: black;
+    align-items: center;
+    height: 35px;
+    padding: 10px;
+}
+
+.btn1 img{
+    background-color: #fff;
+    scale: 75%;
+}
+
+.btn2{
+    margin-left: 10px;
+    background-color: #7f56D9;
+    color: #fff;
+}
+
+.cards, .card, .card h3, .card p {
+  font-family: "Manrope", sans-serif !important;
+}
+
+.cards-viewport {
+    position: relative;
+    width: 100%;
+    height: 400.4px; 
+    overflow: hidden;
+    margin-top: 2rem; 
+}
+
+.cards {
+      background-color: #53389E;
+    position: relative;
+    width: 100%;
+    height: 456px;
+    bottom: -60%;
+    left: -15rem;
+    z-index: 1;
+}
+
+.card {
+    position: absolute;
+    width: 560px;
+    height: 310px;
+    border-radius: 22px;
+    padding: 20px;
+    color: #fff;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    font-family: "Manrope", sans-serif;
+    transform-origin: 520px 158px;
+}
+.card .title {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 10px;
+  background: transparent;
+}
+
+.card p {
+  font-size: 24px;
+  margin-top: 130px;
+  font-weight: 200;
+  background: transparent;
+}
+
+.card .no {
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  letter-spacing: 7px;
+  background: transparent;
+}
+
+.card:nth-child(1) { bottom: 0; left: 50%; transform: translateX(-50%) rotate(20deg); z-index:1; }
+.card:nth-child(2) { bottom: 0; left: 50%; transform: translateX(-50%) rotate(55deg); z-index:2; }
+.card:nth-child(3) { bottom: 0; left: 50%; transform: translateX(-50%) rotate(90deg); z-index:3; }
+.card:nth-child(4) { bottom: 0; left: 50%; transform: translateX(-50%) rotate(125deg); z-index:4; }
+.card:nth-child(5) { bottom: 0; left: 50%; transform: translateX(-50%) rotate(160deg); z-index:5; }
+
+
+@media screen and (max-width: 575px) {
+
+  .container1 {
+    display: grid;
+    max-width: 100%;
+    min-height: auto;
+    text-align: start;
+    
+  }
+
+  .head{
+    margin-left: 10px;
+  }
+
+  .container1 .top {
+    font-size: 12px;
+    padding-top: 20px;
+
+  }
+
+  .container1 .heading {
+    font-size: 32px;
+    line-height: 40px;
+    padding-top: 10px;
+  }
+
+  .container1 .bottom {
+    max-width: 315px;
+    font-size: 12px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .btn{
+    width: 323px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .btn1 {
+    margin-left: 10px;
+    width: 323px;
+    height: 30px;
+    padding: 8px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .btn2 {
+    margin-top: 10px;
+    width: 323px;
+    margin-left: 8px;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+.cards-viewport {
+    position: relative;
+    width: 100%;
+    height: 180px; 
+    overflow: hidden;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: 0;
+}
+
+.cards {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    left: -85px;
+    display: flex;
+    justify-content: center;
+    scale: 1.1;
+}
+
+.card {
+    width: 80%; 
+    max-width: 300px;
+    height: 132px;
+    padding: 15px;
+    transform-origin: 80% 50%; 
+    border-radius: 15px;
+}
+
+
+  .card .title {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  .card p {
+    font-size: 10px;
+    margin-top: 38px;
+  }
+
+  .card .no {
+    font-size: 13px;
+    margin-top: 10px;
+    letter-spacing: 4px;
+  }
+
+  .card:nth-child(1) { transform: translateX(-50%) rotate(25deg); }
+  .card:nth-child(2) { transform: translateX(-50%) rotate(58deg); }
+  .card:nth-child(3) { transform: translateX(-50%) rotate(90deg); }
+  .card:nth-child(4) { transform: translateX(-50%) rotate(122deg); }
+  .card:nth-child(5) { transform: translateX(-50%) rotate(155deg); }
+
+}

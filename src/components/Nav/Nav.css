@@ -1,0 +1,166 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #53389E;
+  height: 80px;
+  width: 100%;
+  padding: 10px 20px;
+  color: #fff;
+  position: relative;
+}
+
+.nav-links a,
+.nav-links .dropdown-menu li a,
+.nav-links button {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero img {
+  max-height: 37px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-items a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-items ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-items li {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #53389E;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 200px;
+  padding: 0;
+  z-index: 10;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  padding: 8px 15px;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #4b2fa3;
+}
+
+.secondnav a {
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+button {
+  background-color: #7F56D9;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  .hero {
+    justify-content: space-between;
+    background-color: #53389E;
+    padding: 10px;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-links a,
+.nav-links .dropdown-menu li a,
+.nav-links .btn1 {
+  color: #fff;
+  text-decoration: none;
+}
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 70%;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #53389E; 
+    padding: 15px;
+    z-index: 10;
+  }
+
+  .nav-links.active {
+    display: flex;
+    background-color: #53389E; 
+  }
+
+  .hamburger {
+    display: block;
+    color: #fff;
+  }
+
+  .logo {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .nav-items a,
+  .nav-items ul {
+    display: none;
+  }
+
+  .dropdown-menu {
+    background-color: #53389E;
+  }
+
+  .dropdown-menu li a {
+    color: #fff;
+  }
+
+
+}
